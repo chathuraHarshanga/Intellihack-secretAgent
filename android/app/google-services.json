@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740981585266",
+    "project_id": "research-97cf2",
+    "storage_bucket": "research-97cf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740981585266:android:424ce0e0d2c4cb61f6d9eb",
+        "android_client_info": {
+          "package_name": "com.example.heart_rp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740981585266-rdbi4jp5shg495om4ui9qak9dbimej4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM-00aaDpOJNkCibtlKBeZiEVL8j1WqgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740981585266-rdbi4jp5shg495om4ui9qak9dbimej4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
