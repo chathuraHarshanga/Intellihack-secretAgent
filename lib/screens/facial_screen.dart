@@ -7,7 +7,6 @@ import 'package:heart_rp/widgets/card_stress.dart';
 import 'package:heart_rp/widgets/progress_vertical.dart';
 
 class FacialScreen extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     double statusBarHeight = MediaQuery.of(context).padding.top;
@@ -17,7 +16,7 @@ class FacialScreen extends StatelessWidget {
     int _crossAxisCount = 2;
 
     double _width = (MediaQuery.of(context).size.width -
-        ((_crossAxisCount - 1) * _crossAxisSpacing)) /
+            ((_crossAxisCount - 1) * _crossAxisSpacing)) /
         _crossAxisCount;
     double _aspectRatio =
         _width / (_cellHeight + _mainAxisSpacing + (_crossAxisCount + 1));
@@ -52,7 +51,6 @@ class FacialScreen extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.vertical,
               children: <Widget>[
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,22 +62,19 @@ class FacialScreen extends StatelessWidget {
                         // Back Button
                         SizedBox(
                           width: 34,
-                          child:RawMaterialButton(
-                            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          child: RawMaterialButton(
+                            materialTapTargetSize:
+                                MaterialTapTargetSize.shrinkWrap,
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: Icon(
-                                Icons.arrow_back_ios,
-                                size: 15.0,
-                                color: Colors.white
-                            ),
+                            child: Icon(Icons.arrow_back_ios,
+                                size: 15.0, color: Colors.white),
                             shape: CircleBorder(
                               side: BorderSide(
                                   color: Colors.white,
                                   width: 2,
-                                  style: BorderStyle.solid
-                              ),
+                                  style: BorderStyle.solid),
                             ),
                           ),
                         ),
@@ -88,12 +83,12 @@ class FacialScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-                            Text("Facial Expression",
+                            Text(
+                              "Facial Expression",
                               style: TextStyle(
                                   fontSize: 25,
                                   fontWeight: FontWeight.w900,
-                                  color: Colors.white
-                              ),
+                                  color: Colors.white),
                             ),
                             SizedBox(height: 10),
                             Row(
@@ -105,8 +100,7 @@ class FacialScreen extends StatelessWidget {
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w900,
-                                      color: Colors.white
-                                  ),
+                                      color: Colors.white),
                                 ),
 
                                 SizedBox(width: 10),
@@ -129,8 +123,7 @@ class FacialScreen extends StatelessWidget {
                         image: AssetImage('assets/icons/Smile_Image.png'),
                         height: 73,
                         width: 80,
-                        color: Colors.white.withOpacity(1)
-                    ),
+                        color: Colors.white.withOpacity(1)),
                   ],
                 ),
                 SizedBox(height: 30),
@@ -342,8 +335,7 @@ class FacialScreen extends StatelessWidget {
                               unit: "avg bpm",
                               color: Constants.darkOrange,
                               image: AssetImage("assets/icons/sad.png"),
-                              remarks: ""
-                          );
+                              remarks: "");
                           break;
                         case 5:
                           return GridItem(
@@ -353,8 +345,7 @@ class FacialScreen extends StatelessWidget {
                               unit: "avg bpm",
                               color: Constants.darkOrange,
                               image: AssetImage("assets/icons/star.png"),
-                              remarks: ""
-                          );
+                              remarks: "");
                           break;
                         case 6:
                           return GridItem(
@@ -364,8 +355,7 @@ class FacialScreen extends StatelessWidget {
                               unit: "avg bpm",
                               color: Constants.darkOrange,
                               image: AssetImage("assets/icons/smile-imo.png"),
-                              remarks: ""
-                          );
+                              remarks: "");
                           break;
                         case 7:
                           return GridItem(
@@ -375,8 +365,7 @@ class FacialScreen extends StatelessWidget {
                               unit: "avg bpm",
                               color: Constants.darkOrange,
                               image: AssetImage("assets/icons/confused.png"),
-                              remarks: ""
-                          );
+                              remarks: "");
                           break;
                         default:
                           return GridItem(
